@@ -10,22 +10,38 @@ async function getFile() {
       main = data.split("\n");
     });
 }
+function expand(input) {
+  let result = [];
+  let i = [input];
+  if (input.indexOf(";") != -1) {
+    i = input.split(";");
+    for (let y = 0; y < i.length; y++) {
+      i[y] = i[y].trim();
+    }
+  }
+  for (let x = 0; x < i.length; x++) {
+    result.push(...expandLinear(i[x]));
+  }
+  return result;
+}
 function expandLinear(input) {
-  let parts = input.split(/,\s?/), res = [];
+  let parts = input.split(/,\s?/),
+    res = [];
   let firstMatch = input.match(/^(.+?)\s*\(s\)\s*(.*)$/);
-  if (firstMatch) 
-      return [`${firstMatch[1]} ${firstMatch[2]}`.trim(), `${firstMatch[1]}s ${firstMatch[2]}`.trim()];
+  if (firstMatch)
+    return [
+      `${firstMatch[1]} ${firstMatch[2]}`.trim(),
+      `${firstMatch[1]}s ${firstMatch[2]}`.trim(),
+    ];
   let base = parts[0];
   if (base.includes("(")) return [input];
   res.push(base);
-  parts.slice(1).forEach(p => {
-      let m = p.match(/\((.*?)\)/);
-      if (m) res.push(base.trim() + m[1]);
+  parts.slice(1).forEach((p) => {
+    let m = p.match(/\((.*?)\)/);
+    if (m) res.push(base.trim() + m[1]);
   });
-
   return res;
 }
-
 async function start() {
   await getFile();
   let lastIndex = 0;
@@ -76,7 +92,10 @@ async function start() {
   let result = [];
   for (let i = 0; i < lgroups.length; i++) {
     for (let j = 0; j < lgroups[i].length; j++) {
-      result.push(lgroups[i][j] + ", " + rgroups[i][j]);
+      let expanded = expand(lgroups[i][j]);
+      for (let k = 0; k < expanded.length; k++) {
+        result.push(expanded[k] + ", " + rgroups[i][j]);
+      }
     }
   }
   document.body.innerHTML = result.join("<br>");
