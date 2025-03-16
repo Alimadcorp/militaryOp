@@ -1,7 +1,7 @@
 let main = [];
 let groups = [];
-let lgroups = [],
-  rgroups = [],
+let LHS = [],
+  RHS = [],
   cgroups = [];
 async function getFile() {
   await fetch("t.txt")
@@ -70,34 +70,34 @@ async function start() {
         }
         tog2 = !tog2;
       }
-      lgroups.push(newL);
-      rgroups.push(newR);
+      LHS.push(newL);
+      RHS.push(newR);
     } else {
       if (tog) {
-        lgroups.push(groups[i]);
+        LHS.push(groups[i]);
       } else {
-        rgroups.push(groups[i]);
+        RHS.push(groups[i]);
       }
       tog = !tog;
     }
   }
 
-  for (let i = 0; i < lgroups.length; i++) {
-    let diff = lgroups[i].length - rgroups[i].length;
+  for (let i = 0; i < LHS.length; i++) {
+    let diff = LHS[i].length - RHS[i].length;
     if (diff != 0) {
-      console.log(i, lgroups[i], rgroups[i]);
+      console.log(i, LHS[i], RHS[i]);
     }
-    for (let j = 0; j < lgroups[i].length; j++) {}
+    for (let j = 0; j < LHS[i].length; j++) {}
   }
   let result = [];
-  for (let i = 0; i < lgroups.length; i++) {
-    for (let j = 0; j < lgroups[i].length; j++) {
-      let expanded = expand(lgroups[i][j]);
+  for (let i = 0; i < LHS.length; i++) {
+    for (let j = 0; j < LHS[i].length; j++) {
+      let expanded = expand(LHS[i][j]);
       for (let k = 0; k < expanded.length; k++) {
-        result.push(expanded[k] + ", " + rgroups[i][j]);
+        result.push(expanded[k] + "," + RHS[i][j]);
       }
     }
   }
-  document.body.innerHTML = result.join("<br>");
+  document.body.innerHTML = result.join("\n<br>");
 }
 start();
