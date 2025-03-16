@@ -528,7 +528,7 @@ Country,cty
 Court of Inquiry,C of I
 Craftsman,cfn
 Craftsmen,cfn
-Crossing (applied to roads, rivers etc),xing
+Crossing,xing
 Crossing Control Organisation,CCO
 Crossing Control Officer,CCO
 Cross country,X cty
@@ -752,7 +752,7 @@ Exercise,ex
 Exercised,ex
 Expedite,expd
 Expedited,expd
-Expense,,exp
+Expense,exp
 Expense,s,exp
 Expenditure,exp
 Explode,expl
@@ -784,7 +784,7 @@ Fighter Ground Attack,FGA
 Fighting Echelon,F ech
 Figure,fig
 Financial Year,FY
-Finance,,fin
+Finance,fin
 Finance,s,fin
 Financial,fin
 Financially,fin
@@ -1311,7 +1311,7 @@ Observation Post,OP
 Observe – Orintate – Decide – Act Cycle/Loop,OODA Cycle/Loop
 Observer,obsr
 Observer to Target (imaginary line),OT
-Obstacle,,obs
+Obstacle,obs
 Obstacle,s,obs
 Offence,offn
 Offensive,offn
@@ -1538,7 +1538,7 @@ Recruitment,rect
 Recruiting,rect
 Recruit Test,RT
 Radio Telephony,RT
-Refer, (red), (ence),,ref
+Refer, (red), (ence),ref
 Refer, (red), (ence),s,ref
 Refilling Point,RP
 Regimental Police,RP
@@ -1588,7 +1588,7 @@ Required,req
 Requirement,req
 Requisition,rqn
 Research and Development,R&D
-Reserve,,res
+Reserve,res
 Reserve,s,res
 Reserve Supply Depot,RSD
 Responsible,resp
