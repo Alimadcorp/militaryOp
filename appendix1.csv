@@ -963,8 +963,9 @@ Improvised Explosive Devices (Vehicle Borne),VBIED
 Inch,in
 Incharge,IC
 Internal Combustion,IC
-Include, , (d),incl
-Include,s , (d),incl
+Include,incl
+Includes,incl
+Included,incl
 Including,incl
 Inclusive,incl
 Increase,inc
