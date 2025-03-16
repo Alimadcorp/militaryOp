@@ -99,5 +99,25 @@ async function start() {
     }
   }
   document.body.innerHTML = result.join("\n<br>");
+  await createJson();
+}
+async function createJson() {
+  let jsonn = [];
+  let texxt = "";
+  await fetch("appendix1.csv")
+    .then((r) => r.text())
+    .then((d) => (texxt = d.split("\r\n")));
+  for (let i = 0; i < texxt.length; i++) {
+    let word = texxt[i].split(",")[0];
+    let abbreviation = texxt[i].split(",")[1];
+    jsonn.push({
+      abbreviation,
+      caseSensitive: false,
+      matchWholeWord: true,
+      pluralSensitive: true,
+      word
+     });
+  }
+  console.log(JSON.stringify(jsonn));
 }
 start();
