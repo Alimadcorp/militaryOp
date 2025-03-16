@@ -754,7 +754,7 @@ Exercised,ex
 Expedite,expd
 Expedited,expd
 Expense,exp
-Expense,s,exp
+Expenses,exp
 Expenditure,exp
 Explode,expl
 Exploded,expl
@@ -762,7 +762,8 @@ Explosion,expl
 Explosive,expl
 Explosive & Ordnance Disposal,EOD
 Extension,extn
-(ed), (ing),extn
+Extended,extn
+Extending,extn
 Extended Short Range Air Defence System,E-SHORADS
 Extra Curricular Activities,ECA
 Extra Regimental Employment,ERE
