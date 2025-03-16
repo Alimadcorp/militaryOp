@@ -1540,8 +1540,10 @@ Recruitment,rect
 Recruiting,rect
 Recruit Test,RT
 Radio Telephony,RT
-Refer, (red), (ence),ref
-Refer, (red), (ence),s,ref
+Refer,ref
+Referred,ref
+Reference,ref
+References,ref
 Refilling Point,RP
 Regimental Police,RP
 Regiment,regt
@@ -1611,7 +1613,7 @@ Right,rt
 Rigorous Imprisonment,RI
 River,R
 Riverine,R
-Riviera (only used in conjunction with a name),R
+Riviera,R
 Riverine Warfare,RW
 Radiological Warfare,RW
 Rotary Wing,RW
@@ -1629,6 +1631,8 @@ Round,rd
 Road,rd
 Rounds per gun (per minute),rpg (pm)
 Rounds per mortar (per minute),rpmor (pm)
+Rounds per gun,rpg
+Rounds per mortar,rpmor
 Routine Order,RO
 Salvage,sal
 Salvaged,sal
