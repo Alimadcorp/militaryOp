@@ -373,7 +373,7 @@ Close Quarter Battle,CQB
 Close Support,CS
 Clothing,clo
 College of Army Education,CAE
-Colon (in messages only),CLN
+Colon,CLN
 Column,colm
 Combat,cbt
 Combat Group,Cbt gp
@@ -386,7 +386,7 @@ Combined,comb
 combination,comb
 Combined Arms Team,CAT
 Combined Military Hospital,CMH
-Comma (in messages only),CMM
+Comma,CMM
 Command,comd
 Commanded,comd
 Commander,comd
@@ -478,7 +478,7 @@ Control,con
 Controlled,con
 Controling,con
 Controller,con
-Control and Reporting (as applied to air defence),C&R
+Control and Reporting,C&R
 Cook,ck
 Cooked,ck
 Cooking,ck
@@ -671,7 +671,8 @@ Draughtsman,dtmn
 Draughtsmen,dtmn
 Driver,dvr
 Dropping Zone,DZ
-Duplicate (d),dupl
+Duplicate,dupl
+Duplicated,dupl
 Duplicating,dupl
 Duplication,dupl
 Ear,ENT
@@ -781,7 +782,7 @@ Field Security,FS
 Field Service Marching Order,FSMO
 Field Service Regulation,FSR
 Field Transfusion Team,FTT
-Fighter (aeroplane),F
+Fighter aeroplane,F
 Fighter Ground Attack,FGA
 Fighting Echelon,F ech
 Figure,fig
@@ -881,7 +882,8 @@ Grenade,gren
 Grenade Launcher Heavy Machine Gun,GLHMG
 Grid Reference,GR
 Ground,gr
-Ground Controlled Interception (station),GCI
+Ground Controlled Interception,GCI
+Ground Controlled Interception Station,GCI
 Ground Liaison Officer,GLO
 Ground Liaison Section,GL sec
 Ground Observer Team,GOT
@@ -956,10 +958,12 @@ Immediately,imed
 Important,imp
 Importance,imp
 Improvised Explosive Device,IED
-Improvised Explosive Device (Remote(ly) Controlled),RCIED
-Improvised Explosive Devices (Remote(ly) Controlled),RCIED
-Improvised Explosive Device (Vehicle Borne),VBIED
-Improvised Explosive Devices (Vehicle Borne),VBIED
+Remotely Controlled Improvised Explosive Device,RCIED
+Remotely Controlled Improvised Explosive Devices,RCIED
+Vehicle Borne Improvised Explosive Device,VBIED
+Vehicle Borne Improvised Explosive Devices,VBIED
+Improvised Explosive Device,IED
+Improvised Explosive Devices,IED
 Inch,in
 Incharge,IC
 Internal Combustion,IC
@@ -1275,7 +1279,6 @@ Navigational,nav
 Necessary,nec
 Necessity,nec
 Necessitate,nec
-(d),nec
 Negative,neg
 Net Identification Sign,NIS
 Net Centric Warfare,NCW
@@ -1313,7 +1316,7 @@ Observation,obsn
 Observation Post,OP
 Observe – Orintate – Decide – Act Cycle/Loop,OODA Cycle/Loop
 Observer,obsr
-Observer to Target (imaginary line),OT
+Observer to Target,OT
 Obstacle,obs
 Obstacles,obs
 Offence,offn
@@ -1500,7 +1503,7 @@ Quick Reaction Course,QRC
 Quick Reaction Force,QRF
 Quick Reaction Team,QRT
 Quick Reconnaissance,QR
-Quotation marks (in messages only),QUOTE UNQUOTE
+Quotation marks,QUOTE UNQUOTE
 Radar Controlled Gun,RCG
 Radar/Radio Countermeasures,RCM
 Radioactive,rad A
@@ -1668,7 +1671,7 @@ Start Point,SP
 Senior,snr
 Sequence,seq
 Sequential,seq
-(ly),seq
+Sequentially,seq
 Serial,ser
 Seriously Ill List,SIL
 Service,svc
@@ -1803,7 +1806,7 @@ Target,tgt
 Target Director Post,TDP
 Task Force,TF
 Technical,tech
-(ly) Technician,tech
+Technically,tech
 Technique,tech
 Technology,tech
 Technical Manual,TM
@@ -1827,8 +1830,8 @@ Time of Despatch,TOD
 Time of Flight,TOF
 Time of Receipt,TOR
 Time of Origin,T of O
-Time on Target (artillery),TOT
-Time Over Target (air),TOT
+Time on Target,TOT
+Time Over Target,TOT
 Time Past a Point,TPP
 Top Secret,topsec
 Topographic,topo
