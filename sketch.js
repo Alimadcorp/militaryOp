@@ -11,17 +11,21 @@ async function getFile() {
     });
 }
 function expandLinear(input) {
-  let parts = input.split(/,\s?/);
-  let base = parts[0].split(" (")[0];
-  let results = [base];
-  for (let part of parts) {
-    let match = part.match(/\((.*?)\)/);
-    if (match) {
-      results.push(base + match[1]);
-    }
-  }
-  return results;
+  let parts = input.split(/,\s?/), res = [];
+  let firstMatch = input.match(/^(.+?)\s*\(s\)\s*(.*)$/);
+  if (firstMatch) 
+      return [`${firstMatch[1]} ${firstMatch[2]}`.trim(), `${firstMatch[1]}s ${firstMatch[2]}`.trim()];
+  let base = parts[0];
+  if (base.includes("(")) return [input];
+  res.push(base);
+  parts.slice(1).forEach(p => {
+      let m = p.match(/\((.*?)\)/);
+      if (m) res.push(base.trim() + m[1]);
+  });
+
+  return res;
 }
+
 async function start() {
   await getFile();
   let lastIndex = 0;

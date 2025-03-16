@@ -754,7 +754,9 @@ Decrease, (d)
 Defence; Defend, (ed); Defensive
 Defence Service Identity Card
 Defence Against Follow on Force Attack
-Defence Area/Sector/Zone
+Defence Area
+Defence Sector
+Defence Zone
 Defence Attache; Daily Allowance; Dispersal Area
 Defensive Fire; Direction Finding
 
@@ -774,7 +776,9 @@ dec
 def
 DSIC
 DAFOFA
-Def A/S/Z
+Def A
+Def S
+Def Z
 DA
 DF
 
@@ -1125,10 +1129,12 @@ General Court Martial
 General Duties
 General Headquarters
 General List
+General Staff (Branch)
+General Staff (Matters)
+General Staff (Staff)
+General Staff (Operations)
+General Staff (Training)
 General Staff
-General Staff (Branch), (Matters), (Staff)
-Operations
-Training
 General Staff Publication
 General Staff Requirement
 General Transport Company
@@ -1152,10 +1158,12 @@ GCM
 GD
 GHQ
 GL
-GS
-G (Br), G (Matters), G (Staff)
+G (Br)
+G (Matters)
+G (Staff)
 G (Ops)
 G (Trg)
+GS
 GSP
 GSR
 GT coy
@@ -1668,7 +1676,7 @@ Monthly Security Intelligence Report
 Mortar
 Mortar Bombing Report
 Motor, (ized)
-Motor Ambulance Company (ASC)
+Motor Ambulance Company
 
 mil
 MCE
